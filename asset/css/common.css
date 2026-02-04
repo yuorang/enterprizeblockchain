@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+    font-family: "Archivo", "NotoSansCJKkr";
+    font-weight: 600;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* * 슬라이드 카드 영역 */
+
+.slide-area {
+    position: relative;
+    height: 400vh;
+}
+
+.slide-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.slide-cont {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    padding-left: 100px;
+}
+
+.slide-head {
+    flex-shrink: 0;
+    padding-right: 160px;
+}
+
+.slide-head__title {
+    font-size: 72px;
+}
+
+.slide-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.slide-item {
+    position: relative;
+    width: 400px;
+    height: 540px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    padding: 34px;
+}
+
+.slide-card__top {
+    position: relative;
+    min-height: 110px;
+    margin-bottom: 40px;
+}
+
+.slide-card__title {
+    font-size: 50px;
+}
+
+.or-divider-text {
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.slide-card__text {
+    position: relative;
+    z-index: 10;
+}
+
+.slide-text {
+    font-size: 24px;
+    line-height: 1.67;
+    flex-shrink: 0;
+    padding: 0px 60px 0px 160px;
+}
+
+.slide-card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 34px;
+    left: 34px;
+    width: calc(100% - 68px);
+}
+
+.slide-card__bottom .left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.slide-card__bottom .profile {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    padding-right: 20px;
+}
+
+.slide-card__bottom .name {
+    font-size: 16px;
+}
+
+.slide-card__bottom .card-icon {
+    width: 40px;
+}
+
+/* 카드 영역 fin */
+.scroll-top-btn {
+    cursor: pointer;
+    position: fixed;
+    right: 100px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 50;
+    background-color: #242424;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* main-value */
+.main-value {
+    height: 100vh;
+    position: relative;
+}
+
+.main-value__wrap {
+    margin: 0 auto;
+    padding: 150px 100px 0;
+    height: 100%;
+}
+
+.main-value__title {
+    font-size: 72px;
+}
+
+.main-value__desc {
+    font-size: 24px;
+    line-height: 1.6;
+    width: 40%;
+    margin-left: auto;
+}
