@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./common.css";
 
+/* 기본 레이아웃 */
 #wrap {
     min-width: 1340px;
 }
@@ -14,20 +15,20 @@ body.dark {
     color: #fff;
 }
 
+/* 헤더 영역 */
 header {
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
     padding: 30px 100px;
     background-color: transparent;
     z-index: 100;
     transform: translateY(-100%);
     transition: top 0.3s ease-out;
-
     color: #fff;
+    min-width: 1340px;
 }
 
 header.dark {
@@ -38,6 +39,7 @@ header.active {
     transform: translateY(0);
 }
 
+/* 헤더 로고 */
 header .logo a {
     width: 100px;
     height: 100px;
@@ -52,7 +54,7 @@ header .logo a {
     filter: invert(1);
 }
 
-/* * header 로고 fin */
+/* 헤더 메뉴 */
 header .menu {
     padding-left: 100px;
 }
@@ -84,6 +86,7 @@ header .menu-item:last-child {
     position: relative;
 }
 
+/* 언어 드롭다운 */
 header .language-dropdown-content {
     background-color: #000;
     padding: 10px;
@@ -94,7 +97,6 @@ header .language-dropdown-content {
     width: 50px;
     align-items: center;
     justify-content: center;
-
     position: absolute;
     right: 0;
     opacity: 0;
@@ -104,7 +106,7 @@ header .language-dropdown-content li {
     font-weight: 600;
 }
 
-/* * header fin */
+/* 푸터 상단 */
 footer {
     overflow: hidden;
 }
@@ -145,7 +147,7 @@ footer .btn {
     color: #fff;
 }
 
-/* * top fin */
+/* 푸터 배너 */
 .banner {
     display: flex;
     justify-content: flex-end;
@@ -205,8 +207,7 @@ footer .banner .blue {
     backdrop-filter: blur(36px);
 }
 
-/* * scroll banner */
-
+/* 푸터 하단 */
 footer .bottom {
     position: relative;
     z-index: 1;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
 
+/* 기본 설정 */
 body {
     font-family: "Archivo", "NotoSansCJKkr";
     font-weight: 600;
@@ -9,9 +10,12 @@ body {
     position: absolute;
     width: 1px;
     height: 1px;
+    padding: 0;
+    margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-    margin: -1px;
+    white-space: nowrap;
+    border-width: 0;
 }
 
 .upper {
@@ -22,8 +26,7 @@ body {
     font-style: italic;
 }
 
-/* * 슬라이드 카드 영역 */
-
+/* 슬라이드 영역 */
 .slide-area {
     position: relative;
     height: 400vh;
@@ -56,9 +59,9 @@ body {
     display: flex;
     gap: 40px;
     align-items: center;
-
 }
 
+/* 슬라이드 카드 */
 .slide-item {
     position: relative;
     width: 400px;
@@ -101,7 +104,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: absolute;
     bottom: 34px;
     left: 34px;
@@ -129,7 +131,7 @@ body {
     width: 40px;
 }
 
-/* 카드 영역 fin */
+/* 상단 이동 버튼 */
 .scroll-top-btn {
     cursor: pointer;
     position: fixed;
@@ -137,11 +139,9 @@ body {
     bottom: 40px;
     width: 50px;
     height: 50px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     z-index: 50;
     background-color: #242424;
     opacity: 0;
@@ -154,7 +154,7 @@ body {
     visibility: visible;
 }
 
-/* main-value */
+/* 메인 가치 영역 */
 .main-value {
     height: 100vh;
     position: relative;
