@@ -176,3 +176,39 @@ body {
     width: 40%;
     margin-left: auto;
 }
+
+/* visual */
+.visual {
+    position: relative;
+    padding: 220px 0px;
+}
+
+/* 상/하단 장식 요소*/
+.visual .before,
+.visual .after {
+    position: absolute;
+    width: 0%;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+}
+
+.visual .before {
+    right: 0;
+    top: 0;
+}
+
+.visual .after {
+    left: 0;
+    bottom: 0;
+    width: 0;
+}
+
+/* 텍스트 레이아웃 */
+.visual .visual-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+}
